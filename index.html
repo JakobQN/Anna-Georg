@@ -16,6 +16,12 @@
       rel="stylesheet"
     />
     <script>
+      var passwort = "safe"; // Hier dein Passwort setzen
+  var eingabe = prompt("Bitte gib das Passwort ein");
+
+  if (eingabe !== passwort) {
+    window.location.href = "https://www.google.com"; // Weiterleitung zu einer anderen Seite
+  }
       tailwind.config = {
         theme: {
           extend: {
@@ -211,7 +217,7 @@
             <ul class="space-y-4">
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Rosis Hofbräuhaus</h4>
+                  <h4 class="font-playfair text-xl">Hofbräuhaus</h4>
                   <p class="text-gray-700">800 m von der Location</p>
                 </div>
                 <a
@@ -222,7 +228,7 @@
               </li>
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Puff</h4>
+                  <h4 class="font-playfair text-xl">Hotel 2</h4>
                   <p class="text-gray-700">1,3 km von der Location</p>
                 </div>
                 <a
@@ -301,7 +307,7 @@
                 <i class="ri-hotel-line text-white text-xl"></i>
               </div>
               <div>
-                <h3 class="font-playfair text-xl">Paul Erling (Unterkunft)</h3>
+                <h3 class="font-playfair text-xl">Paul (Unterkunft)</h3>
                 <p class="text-gray-700">+49 xxx xxxxxxx</p>
                 <p class="text-gray-700">xxxxxxxxxxxx</p>
               </div>
@@ -313,7 +319,7 @@
                 <i class="ri-gift-line text-white text-xl"></i>
               </div>
               <div>
-                <h3 class="font-playfair text-xl">Emma Watson (Geschenke)</h3>
+                <h3 class="font-playfair text-xl">Emma (Geschenke)</h3>
                 <p class="text-gray-700">+49 xxx xxxxxxx</p>
                 <p class="text-gray-700">xxxxxxxxxxxx</p>
               </div>
