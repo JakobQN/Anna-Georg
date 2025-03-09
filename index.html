@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anna & Georgs Hochzeit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(203 203 203)",
+              secondary: "rgb(203 203 203)",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      .font-inter { font-family: 'Inter', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-white">
+    <header class="relative h-screen">
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('querformat.jpg')"
+      ></div>
+      <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+      <div
+        class="absolute inset-0 flex flex-col items-center justify-center text-white"
+      >
+        <h1 class="font-inter font-light text-6xl mb-4">Anna & Georg</h1>
+        <p class="font-inter font-light text-xl mt-4">28. Juni 2025</p>
+      </div>
+    </header>
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-center space-x-8 py-4">
+          <a
+            href="#schedule"
+            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
+            >Zeitplan</a
+          >
+          <a
+            href="#location"
+            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
+            >Standort</a
+          >
+          <a
+            href="#registry"
+            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
+            >Geschenke</a
+          >
+          <a
+            href="#accommodation"
+            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
+            >Unterkunft</a
+          >
+          <button
+            class="font-inter text-gray-700 bg-primary hover:bg-opacity-70 cursor-pointer !rounded-button px-6"
+          >
+            RSVP
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 py-16">
+      <section class="text-center mb-20">
+       
+        <p class="font-inter text-gray-700 max-w-2xl mx-auto">
+          Wir freuen uns schon sehr auf Euch! Auf dieser Seite findet Ihr viele Infos rund um die Hochzeit.
+        </p>
+        <p class="font-inter text-gray-700 max-w-2xl mx-auto">
+-          </p>
+          <p class="font-inter text-gray-700 max-w-2xl mx-auto">
+            (Die Seite wird immer mal wieder aktualisiert)
+          </p>
+        <div class="mt-8 p-6 bg-secondary rounded-lg inline-block">
+          <p class="font-playfair text-gray-700">
+            Bitte um Rückmeldung bis zum 15. Mai 2025
+          </p>
+        </div>
+      </section>
+      <section id="schedule" class="mb-20">
+        <h2 class="font-inter font-light text-4xl text-center mb-12">
+          Tagesablauf
+        </h2>
+        <div class="max-w-3xl mx-auto">
+          <div class="relative pl-8 pb-8 border-l-2 border-primary">
+            <div
+              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
+            ></div>
+            <h3 class="font-playfair text-2xl mb-2">
+              14:00 Uhr - Kirchliche Trauung
+            </h3>
+            <p class="text-gray-700">St. Thomas - 53902 Bad Münstereifel</p>
+          </div>
+          <div class="relative pl-8 pb-8 border-l-2 border-primary">
+            <div
+              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
+            ></div>
+            
+            <h3 class="font-playfair text-2xl mb-2">16:00 Uhr - Empfang</h3>
+            <p class="text-gray-700">Winterburg - Haus Winterburg 1, 53359 Rheinbach</p>
+          </div>
+          <div class="relative pl-8">
+            <div
+              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
+            ></div>
+            <h3 class="font-playfair text-2xl mb-2">
+              19:30 Uhr - Soiree
+            </h3>
+            <p class="text-gray-700">Winterburg - Haus Winterburg 1, 53359 Rheinbach</p>
+          </div>
+        </div>
+      </section>
+      <section id="location" class="mb-20">
+        <h2 class="font-inter font-light text-4xl text-center mb-12">
+          Standorte
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <div
+              class="h-64 bg-cover bg-center"
+              style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"
+            ></div>
+            <div class="p-6">
+              <h3 class="font-playfair text-2xl mb-2">Kirchliche Trauung</h3>
+              <p class="text-gray-700 mb-4">
+                St. Thomas<br />53902 Bad Münstereifel
+              </p>
+              <a
+                href="https://maps.app.goo.gl/QoBx8tidQUXACfXS8"
+                target="_blank"
+                class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
+                >In Google Maps ansehen</a
+              >
+            </div>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-lg">
+            <div
+              class="h-64 bg-cover bg-center"
+              style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"
+            ></div>
+            <div class="p-6">
+              <h3 class="font-playfair text-2xl mb-2">Empfang und Soiree</h3>
+              <p class="text-gray-700 mb-4">Winterburg<br />Haus Winterburg 1, 53359 Rheinbach</p>
+              <a
+                href="https://maps.app.goo.gl/BL1NLBNaH1FxG6Ux7"
+                target="_blank"
+                class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
+                >In Google Maps ansehen</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="registry" class="mb-20">
+        <h2 class="font-inter font-light text-4xl text-center mb-12">
+          Geschenke
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="font-playfair text-2xl mb-4">Hochzeitstisch</h3>
+            <h4 class="text-gray-700 mb-4">Passwort: HNE96</h4>
+            <a
+              href="https://www.hochzeits-tisch.de/tische/50-anna-georg"
+              target="_blank"
+              class="inline-block border-2 border-gray-800 text-gray-800 px-6 py-2 !rounded-button hover:bg-gray-50 cursor-pointer"
+              >Zur Geschenkeliste</a
+            >
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <h3 class="font-playfair text-2xl mb-4">Banküberweisung</h3>
+            <p class="text-gray-700 mb-4">IBAN: DE89 3704 0044 0532 0130 00</p>
+          </div>
+        </div>
+      </section>
+      <section id="accommodation" class="mb-20">
+        <h2 class="font-inter font-light text-4xl text-center mb-12">
+          Unterkunft
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="font-playfair text-2xl mb-4">Unterkünfte</h3>
+            <ul class="space-y-4">
+              <li class="flex justify-between items-center">
+                <div>
+                  <h4 class="font-playfair text-xl">Rosis Hofbräuhaus</h4>
+                  <p class="text-gray-700">800 m von der Location</p>
+                </div>
+                <a
+                  href="#"
+                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
+                  >Jetzt buchen</a
+                >
+              </li>
+              <li class="flex justify-between items-center">
+                <div>
+                  <h4 class="font-playfair text-xl">Puff</h4>
+                  <p class="text-gray-700">1,3 km von der Location</p>
+                </div>
+                <a
+                  href="#"
+                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
+                  >Jetzt buchen</a
+                >
+              </li>
+            </ul>
+            <div class="mt-8 pt-8 border-t">
+              <h4 class="font-playfair text-xl mb-2">Bruacht Ihr Hilfe bei der Unterkunftbuchung?</h4>
+              <p class="text-gray-700">
+                Das Kontingent an Zimmern ist bis zum XX.XX.XXXX für euch reserviert. Bitte meldet Euch gerne bei xxx falls ihr Fragen habt!
+              </p>
+              <p class="text-primary">XXX - +49 234 567 8900</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mb-20">
+        <h2 class="font-inter font-light text-3xl text-center mb-12">
+          Dresscode
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="w-32 h-32 mx-auto mb-4">
+              <img
+                src="https://public.readdy.ai/ai/img_res/2d572dac34e42bda20a96d7b9543d658.jpg"
+                alt="Tracht"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="font-playfair text-2xl mb-4">Trauung</h3>
+            <p class="text-gray-700">Tracht</p>
+          </div>
+          <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+            <div class="w-32 h-32 mx-auto mb-4">
+              <img
+                src="https://public.readdy.ai/ai/img_res/a97ceeacb92ebf7e636e2232a84d57af.jpg"
+                alt="Black Tie"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3 class="font-playfair text-2xl mb-4">Soirée</h3>
+            <p class="text-gray-700">Black Tie</p>
+          </div>
+        </div>
+      </section>
+      <section class="mb-20">
+        <h2 class="font-inter font-light text-3xl text-center mb-12">
+          Hochzeitsbilder
+        </h2>
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <p class="text-gray-700 mb-4">
+              Die Hochzeitsbilder werden nach der Feier hier verfügbar sein.
+            </p>
+            <a
+              href="#"
+              class="inline-block border-2 border-gray-800 text-gray-800 px-6 py-2 !rounded-button hover:bg-gray-50 cursor-pointer"
+              >Zur Bildergalerie</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="mb-20">
+        <h2 class="font-inter font-light text-3xl text-center mb-12">
+          Ansprechpersonen
+        </h2>
+        <div class="max-w-4xl mx-auto">
+          <div class="bg-white p-8 rounded-lg shadow-lg space-y-8">
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary rounded-full"
+              >
+                <i class="ri-hotel-line text-white text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-playfair text-xl">Paul Erling (Unterkunft)</h3>
+                <p class="text-gray-700">+49 xxx xxxxxxx</p>
+                <p class="text-gray-700">xxxxxxxxxxxx</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary rounded-full"
+              >
+                <i class="ri-gift-line text-white text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-playfair text-xl">Emma Watson (Geschenke)</h3>
+                <p class="text-gray-700">+49 xxx xxxxxxx</p>
+                <p class="text-gray-700">xxxxxxxxxxxx</p>
+              </div>
+            </div>
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 flex items-center justify-center bg-primary rounded-full"
+              >
+                <i class="ri-calendar-event-line text-white text-xl"></i>
+              </div>
+              <div>
+                <h3 class="font-playfair text-xl">
+                  Maxi (Abendprogramm)
+                </h3>
+                <p class="text-gray-700">+49 xxx xxxxxxx</p>
+                <p class="text-gray-700">xxxxxxxxxxxx</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div
+      id="rsvpModal"
+      class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center"
+    >
+      <div class="bg-white p-8 rounded-lg max-w-md w-full mx-4">
+        <h3 class="font-playfair text-2xl mb-4">Rückmeldung</h3>
+        <form id="rsvpForm" class="space-y-4">
+          <div>
+            <label class="block text-gray-700 mb-2">Name</label>
+            <input type="text" class="w-full p-2 border rounded" required />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-2">E-Mail</label>
+            <input type="email" class="w-full p-2 border rounded" required />
+          </div>
+          <div>
+            <label class="block text-gray-700 mb-2"
+              >Werden Sie teilnehmen?</label
+            >
+            <select class="w-full p-2 border rounded pr-8" required>
+              <option value="">Bitte auswählen</option>
+              <option value="yes">Ja, ich nehme teil</option>
+              <option value="no">Nein, ich kann leider nicht teilnehmen</option>
+            </select>
+          </div>
+          <div class="flex justify-end space-x-4">
+            <button
+              type="button"
+              onclick="closeRsvpModal()"
+              class="px-4 py-2 text-gray-600 hover:text-gray-800 cursor-pointer"
+            >
+              Abbrechen
+            </button>
+            <button
+              type="submit"
+              class="border-2 border-gray-800 text-gray-800 px-6 py-2 !rounded-button hover:bg-gray-50 cursor-pointer"
+            >
+              Absenden
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      function openRsvpModal() {
+        document.getElementById("rsvpModal").classList.remove("hidden");
+        document.getElementById("rsvpModal").classList.add("flex");
+      }
+      function closeRsvpModal() {
+        document.getElementById("rsvpModal").classList.add("hidden");
+        document.getElementById("rsvpModal").classList.remove("flex");
+      }
+      document.getElementById("rsvpForm").addEventListener("submit", function (e) {
+        e.preventDefault();
+        closeRsvpModal();
+        showThankYouMessage();
+      });
+      function showThankYouMessage() {
+        const thankYouDiv = document.createElement("div");
+        thankYouDiv.className =
+          "fixed bottom-4 right-4 bg-primary text-white px-6 py-3 rounded shadow-lg";
+        thankYouDiv.textContent = "Vielen Dank für Ihre Rückmeldung!";
+        document.body.appendChild(thankYouDiv);
+        setTimeout(() => thankYouDiv.remove(), 3000);
+      }
+    </script>
+  </body>
+</html>
