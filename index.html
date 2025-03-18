@@ -29,7 +29,7 @@
           extend: {
             colors: {
               primary: "rgb(203 203 203)",
-              secondary: "rgb(203 203 203)",
+              secondary: "#f5efe4;",
             },
             borderRadius: {
               none: "0px",
@@ -46,10 +46,15 @@
           },
         },
       };
-    </script>
+
+</script>
+
     <style>
       :where([class^="ri-"])::before { content: "\f3c2"; }
       .font-inter { font-family: 'Inter', sans-serif; }
+      .font-garamond {
+        font-family: 'EB Garamond', serif !important;
+      }
     </style>
   </head>
   <body class="bg-white" style="background-color: #FEFBF6;">
@@ -62,101 +67,113 @@
       <div
         class="absolute inset-0 flex flex-col items-center justify-center text-white"
       >
-        <h1 class="font-inter font-light text-6xl mb-4">Anna & Georg</h1>
-        <p class="font-inter font-light text-xl mt-4">28. Juni 2025</p>
+        <h1 class="font-garamond font-light text-6xl mb-4">Anna & Georg</h1>
+        <p class="font-garamond font-light text-xl mt-4">28. Juni 2025</p>
       </div>
     </header>
     <nav class="bg-white shadow-lg sticky top-0 z-50" style="background-color: #FEFBF6;">
       <div class="max-w-7xl mx-auto px-4">
-        <div class="flex justify-center space-x-8 py-4">
-          <a
-            href="#schedule"
-            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
-            >Zeitplan</a
-          >
-          <a
-            href="#location"
-            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
-            >Standort</a
-          >
-          <a
-            href="#registry"
-            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
-            >Geschenke</a
-          >
-          <a
-            href="#accommodation"
-            class="font-inter text-gray-700 hover:text-primary cursor-pointer"
-            >Unterkunft</a
-          >
+        <div class="flex justify-between items-center py-4">
+          <div class="w-full flex justify-center md:justify-center">
+            <div id="menu" class="hidden md:flex space-x-8">
+              <a href="#schedule" class="font-garamond text-gray-700 hover:text-primary cursor-pointer">Zeitplan</a>
+              <a href="#location" class="font-garamond text-gray-700 hover:text-primary cursor-pointer">Standort</a>
+              <a href="#registry" class="font-garamond text-gray-700 hover:text-primary cursor-pointer">Geschenke</a>
+              <a href="#accommodation" class="font-garamond text-gray-700 hover:text-primary cursor-pointer">Unterkunft</a>
+            </div>
+          </div>
+          <div class="md:hidden flex justify-end w-full">
+            <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md p-4">
+        <a href="#schedule" class="block py-2 text-gray-700 hover:text-primary menu-item">Zeitplan</a>
+        <a href="#location" class="block py-2 text-gray-700 hover:text-primary menu-item">Standort</a>
+        <a href="#registry" class="block py-2 text-gray-700 hover:text-primary menu-item">Geschenke</a>
+        <a href="#accommodation" class="block py-2 text-gray-700 hover:text-primary menu-item">Unterkunft</a>
+      </div>
     </nav>
+    
+    
     <main class="max-w-7xl mx-auto px-4 py-16">
       <section class="text-center mb-20">
        
-        <p class="font-inter text-gray-700 max-w-2xl mx-auto mb-4">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mb-4">
           Wir freuen uns schon sehr auf Euch alle! <br> Auf dieser Seite findet Ihr viele Infos rund um die Hochzeit.
         </p>
         <div class="mt-8 p-6 bg-secondary rounded-lg inline-block">
-          <p class="font-playfair text-gray-700">
-            Bitte um Rückmeldung bis <span class="font-bold">25. April 2025</span> <br>via Mail an: <a href="mailto:georgundannaheirtaten@gmail.com" class="text-blue-600 underline">georgundannaheirtaten@gmail.com</a> <br>oder über den QR-Code auf dem Infozettel
+          <p class="font-garamond text-gray-700">
+            u.a.w.g <span class="font-bold">25. April 2025</span> <br><a href="mailto:georgundannaheirtaten@gmail.com" class="text-blue-600 underline">georgundannaheirtaten@gmail.com</a> <br>oder über den QR-Code auf dem Infozettel
           </p>
           
         </div>
       </section>
       <section id="schedule" class="mb-20">
-        <h2 class="font-inter font-light text-4xl text-center mb-12">
+        <h2 class="font-garamond font-light text-4xl text-center mb-12">
           Ablauf
         </h2>
-        <p class="font-inter text-gray-700 max-w-2xl text-xs mx-auto mb-9 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl text-s mx-auto mb-9 text-center">
           (Bitte beachtet Eure individuellen Einladungskarten. Leider konnten wir nicht alle zu jedem Programmpunkt einladen)
         </p>
-        <p class="font-playfair text-2xl mb-5 max-w-full text-2x1 mx-auto text-left ml-20">
-          Freitag 27. Juni 2025
-        </p>
         <div class="max-w-3xl mx-auto">
-          <div class="relative pl-8 pb-8 border-l-2 border-primary">
-            <div
-              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
-            ></div>
-            <h3 class="font-playfair text-2xl mb-2">
+          <p class="font-garamond text-2xl mb-5 max-w-full text-2x1 mx-auto text-left">
+            Freitag 27. Juni 2025
+          </p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+          <div class="relative pl-8 pb-8">
+            <!-- Goblet Icon -->
+            <i class="ri-beer-line text-primary text-lg absolute -left-[11px] top-1"></i>
+        
+            <!-- Linie beginnt unterhalb des Icons -->
+            <div class="absolute left-0 top-7 bottom-0 w-[2px] bg-primary"></div>
+        
+            <h3 class="font-garamond text-xl font-bold mb-2">
               18:30 - Sommerabend in Tracht
             </h3>
             <p class="text-gray-700">Winterburg - Haus Winterburg 1, 53359 Rheinbach</p>
           </div>
-          <div class="relative pl-8 pb-8 border-l-2 border-primary">
-        </div></div>
+        </div>
 
-        <p class="font-playfair text-2xl mb-5 max-w-full text-2x1 mx-auto text-left ml-20">
-          Samastag 28. Juni 2025
-        </p>
+        <div class="max-w-3xl mx-auto">
+          <p class="font-garamond text-2xl mb-5 max-w-full text-2x1 mx-auto text-left">
+            Samstag 28. Juni 2025
+          </p>
+        </div>
         <div class="max-w-3xl mx-auto">
           
-          <div class="relative pl-8 pb-8 border-l-2 border-primary">
-            <div
-              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
-            ></div>
+          <div class="relative pl-8 pb-8">
+            <!-- Goblet Icon -->
+            <i class="fas fa-church text-primary text-lg absolute -left-[11px] top-1"></i>
+        
+            <!-- Linie beginnt unterhalb des Icons -->
+            <div class="absolute left-0 top-7 bottom-0 w-[2px] bg-primary"></div>
 
-            <h3 class="font-playfair text-2xl mb-2">
+            <h3 class="font-garamond text-xl font-bold mb-2">
               11:00 - Trauung
             </h3>
             <p class="text-gray-700">Houverath - St. Thomas, 53902 Bad Münstereifel</p>
           </div>
-          <div class="relative pl-8 pb-8 border-l-2 border-primary">
-            <div
-              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
-            ></div>
+         <div class="relative pl-8 pb-8">
+            <!-- Goblet Icon -->
+            <i class="ri-goblet-fill text-primary text-lg absolute -left-[11px] top-1"></i>
+        
+            <!-- Linie beginnt unterhalb des Icons -->
+            <div class="absolute left-0 top-7 bottom-0 w-[2px] bg-primary"></div>
             
-            <h3 class="font-playfair text-2xl mb-2">bis 16:00 – Empfang nach der Trauung
+            <h3 class="font-garamond text-xl font-bold mb-2">bis 16:00 – Empfang nach der Trauung
             </h3>
             <p class="text-gray-700">Winterburg - Haus Winterburg 1, 53359 Rheinbach</p>
           </div>
-          <div class="relative pl-8">
-            <div
-              class="absolute w-4 h-4 bg-primary rounded-full -left-[9px]"
-            ></div>
-            <h3 class="font-playfair text-2xl mb-2">
+          <div class="relative pl-8 pb-8">
+            <!-- Goblet Icon -->
+            <i class="ri-music-line text-primary text-lg absolute -left-[11px] top-1"></i>
+            <h3 class="font-garamond text-xl font-bold mb-2">
               19:00 – Soirée
             </h3>
             <p class="text-gray-700">Winterburg - Haus Winterburg 1, 53359 Rheinbach</p>
@@ -164,7 +181,7 @@
         </div>
       </section>
       <section id="location" class="mb-20">
-        <h2 class="font-inter font-light text-4xl text-center mb-12">
+        <h2 class="font-garamond font-light text-4xl text-center mb-12">
           Standorte
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -174,7 +191,7 @@
               style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"
             ></div>
             <div class="p-6">
-              <h3 class="font-playfair text-2xl mb-2">Kirchliche Trauung</h3>
+              <h3 class="font-garamond text-2xl mb-2">Kirchliche Trauung</h3>
               <p class="text-gray-700 mb-4">
                 St. Thomas - 53902 Bad Münstereifel
               </p>
@@ -195,7 +212,7 @@
               style="background-image: url('https://public.readdy.ai/gen_page/map_placeholder_1280x720.png')"
             ></div>
             <div class="p-6">
-              <h3 class="font-playfair text-2xl mb-2">Empfang und Soiree</h3>
+              <h3 class="font-garamond text-2xl mb-2">Empfang und Soiree</h3>
               <p class="text-gray-700 mb-4">Winterburg - Haus Winterburg 1, 53359 Rheinbach</p>
               <a
                 href="https://maps.app.goo.gl/BL1NLBNaH1FxG6Ux7"
@@ -211,19 +228,19 @@
         </div>
       </section>
       <section id="registry" class="mb-20">
-        <h2 class="font-inter font-light text-4xl text-center mb-12">
+        <h2 class="font-garamond font-light text-4xl text-center mb-12">
           Geschenke
         </h2>
-        <p class="font-inter text-gray-700 max-w-2xl mx-auto mb-4 text-center font-bold">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto text-s mb-4 text-center font-bold">
           Euer kommen ist für uns das größte Genschenk!
         </p>
-        <p class="font-inter text-gray-700 max-w-2xl mx-auto mb-10 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mb-10 text-center">
           Falls ihr uns dennoch etwas schenken möchet, haben wir eine Liste zur Inspiration erstellt. Bitte denkt daran, eure Geschenke als geschenkt zu markieren um Doppelungen zu vermeiden. 
 Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unseres gemeinsamen Zuhauses freuen.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-            <h3 class="font-playfair text-2xl mb-4">Hochzeitstisch</h3>
+            <h3 class="font-garamond text-2xl mb-4">Hochzeitstisch</h3>
             <h4 class="text-gray-700 mb-4">Passwort: HNE96</h4>
             <a
               href="https://www.hochzeits-tisch.de/tische/50-anna-georg"
@@ -233,48 +250,48 @@ Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unse
             >
           </div>
           <div class="bg-white p-8 rounded-lg shadow-lg text-center">
-            <h3 class="font-playfair text-2xl mb-4">Banküberweisung</h3>
-            <p class="text-gray-700 mb-1 text-center">IBAN: DE89 3705 0229 1045 0334 84</p>
-            <p class="text-gray-700 mb-4 text-center">Name: Anna von Brauchitsch</p>
+            <h3 class="font-garamond text-2xl mb-4">Für das gemeinsame Zuhause</h3>
+            <p class="text-gray-700 mb-1 text-center">IBAN: DE44 3705 0299 1045 0795 61</p>
+            <p class="text-gray-700 mb-4 text-center">Name: Karin von Brauchitsch</p>
           </div>
         </div>
       </section>
       <section id="accommodation" class="mb-20">
-        <h2 class="font-inter font-light text-4xl text-center mb-12">
+        <h2 class="font-garamond font-light text-4xl text-center mb-12">
           Unterkunft
         </h2>
         <div class="max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h3 class="font-playfair text-2xl mb-4">Unterkünfte</h3>
+            <h3 class="font-garamond text-2xl mb-4">Unterkünfte</h3>
             <ul class="space-y-4">
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Hotel Nord</h4>
-                  <p class="text-gray-700">Rheinbach (9,1km von der Location)</p>
+                  <h4 class="font-garamond text-xl font-bold">Hotel Nord</h4>
+                  <p class="text-gray-700">9 km von der Location</p>
                   <p class="text-gray-700">Kontingent bis 25.05.2025 auf den Namen „Waldenfels-Brauchitsch“</p>
                 </div>
                 <a
                   href="https://www.hotelnord.net"
                   class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >Jetzt buchen</a
+                  >zur Website</a
                 >
               </li>
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Kloster Schweinheim</h4>
+                  <h4 class="font-garamond text-xl font-bold">Kloster Schweinheim</h4>
                   <p class="text-gray-700">8,6 km von der Location</p>
                   <p class="text-gray-700">Reservierungen auf den Namen „Waldenfels-Brauchitsch“</p>
                 </div>
                 <a
                   href="https://www.kloster-schweinheim.de/uebernachten"
                   class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >Jetzt buchen</a
+                  >zur Website</a
                 >
               </li>
 
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Hotel zur Waage</h4>
+                  <h4 class="font-garamond text-xl font-bold">Hotel zur Waage</h4>
                   <p class="text-gray-700">10 km von der Location</p>
                   <p class="text-gray-700">Kein Kontingent - bitte zeitnah reservieren</p>
                   <p class="text-gray-700">DZ:100€ (bei 2 Übernschtungen 180€) EZ:76€</p>
@@ -282,13 +299,13 @@ Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unse
                 <a
                   href="https://www.hotelzurwaage.de/hotel/"
                   class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >Jetzt buchen</a
+                  >zur Website</a
                 >
               </li>
 
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Hote Rothkopf</h4>
+                  <h4 class="font-garamond text-xl font-bold">Hote Rothkopf</h4>
                   <p class="text-gray-700">14 km von der Location</p>
                   <p class="text-gray-700">Kein Kontingent - bitte zeitnah reservieren</p>
                   <p class="text-gray-700">DZ:100€ EZ:85€ - auch 3Bettzimmer verfügbar</p>
@@ -296,13 +313,13 @@ Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unse
                 <a
                   href="http://www.hotel-rothkopf.de/"
                   class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >Jetzt buchen</a
+                  >zur Website</a
                 >
               </li>
 
               <li class="flex justify-between items-center">
                 <div>
-                  <h4 class="font-playfair text-xl">Jugendwohnheim Haus Rheinbach</h4>
+                  <h4 class="font-garamond text-xl font-bold">Jugendwohnheim Haus Rheinbach</h4>
                   <p class="text-gray-700">8 km von der Location</p>
                   <p class="text-gray-700">Kein Kontingent - bitte zeitnah reservieren</p>
                   <p class="text-gray-700">Dreibettzimmer 30€ p./P. als EZ 46€</p>
@@ -310,7 +327,7 @@ Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unse
                 <a
                   href="https://haus-rheinbach.de/unser-wohnheim-2/"
                   class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >Jetzt buchen</a
+                  >zur Website</a
                 >
               </li>
             </ul>
@@ -327,20 +344,20 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
         </div>
       </section>
       <section class="mb-20">
-        <h2 class="font-inter font-light text-3xl text-center mb-12">
+        <h2 class="font-garamond font-light text-3xl text-center mb-12">
           Dresscode
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div class="bg-white p-8 rounded-lg shadow-lg text-center">
             <div class="w-32 h-32 mx-auto mb-4">
               <img
-                src="https://public.readdy.ai/ai/img_res/2d572dac34e42bda20a96d7b9543d658.jpg"
-                alt="Tracht"
-                class="w-full h-full object-contain"
+                src="cutaway.png"
+                alt="English Cut-Away Suit"
+                class="w-40 h-40 object-contain mx-auto"
               />
             </div>
-            <h3 class="font-playfair text-2xl mb-4">Trauung</h3>
-            <p class="text-gray-700">Tracht</p>
+            <h3 class="font-garamond text-2xl mb-4 font-bold">Trauung</h3>
+            <p class="text-gray-700">Cutaway / Dunkler Anzug</p>
           </div>
           <div class="bg-white p-8 rounded-lg shadow-lg text-center">
             <div class="w-32 h-32 mx-auto mb-4">
@@ -350,21 +367,21 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
                 class="w-full h-full object-contain"
               />
             </div>
-            <h3 class="font-playfair text-2xl mb-4">Soirée</h3>
+            <h3 class="font-garamond text-2xl mb-4 font-bold">Soirée</h3>
             <p class="text-gray-700">Black Tie</p>
           </div>
         </div>
-        <p class="font-inter text-gray-700 max-w-2xl mx-auto mt-5 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mt-5 text-center">
           Abends kann es kühl werden, bringt daher etwas Wärmeres mit. <br><br>
           <i class="fas fa-shoe-prints mr-2"></i>Ein paar Programmpunkte finden auf dem Rasen statt. Wir empfehlen das in die Wahl der Schuhe mit einzubeziehen.
         </p>
 
-        <p class="font-inter text-gray-700 max-w-2xl mx-auto mt-5 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mt-5 text-center">
           <i class="fas fa-baby mr-2"></i>Aufgrund der Räumlichkeiten vor Ort ist es nicht möglich, eine Kinderbetreuung zu organisieren; zudem gibt es ungesicherte Wasserflächen an der Winterburg. Wir bitten deshalb um Verständnis, dass grundsätzlich nur Säuglinge mitfeiern können.
         </p>
       </section>
       <section class="mb-20">
-        <h2 class="font-inter font-light text-3xl text-center mb-12">
+        <h2 class="font-garamond font-light text-3xl text-center mb-12">
           Hochzeitsbilder
         </h2>
         <div class="max-w-4xl mx-auto text-center">
@@ -381,7 +398,7 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
         </div>
       </section>
       <section class="mb-20">
-        <h2 class="font-inter font-light text-3xl text-center mb-12">
+        <h2 class="font-garamond font-light text-3xl text-center mb-12">
           Ansprechpersonen
         </h2>
         <div class="max-w-4xl mx-auto">
@@ -390,10 +407,10 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
               <div
                 class="w-12 h-12 flex items-center justify-center bg-primary rounded-full"
               >
-                <i class="ri-hotel-line text-white text-xl"></i>
+                <i class="ri-home-line text-white text-xl"></i>
               </div>
               <div>
-                <h3 class="font-playfair text-xl">Marie v. Bar (Unterkunft)</h3>
+                <h3 class="font-garamond text-xl">Marie v. Bar (Unterkunft)</h3>
                 <p class="text-gray-700">+49 157 84033587</p>
               </div>
             </div>
@@ -404,7 +421,7 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
                 <i class="ri-gift-line text-white text-xl"></i>
               </div>
               <div>
-                <h3 class="font-playfair text-xl">Karin v. Brauchitsch (Geschenke)</h3>
+                <h3 class="font-garamond text-xl">Karin v. Brauchitsch (Geschenke)</h3>
                 <p class="text-gray-700">+49 177 7386750</p>
               </div>
             </div>
@@ -412,10 +429,10 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
               <div
                 class="w-12 h-12 flex items-center justify-center bg-primary rounded-full"
               >
-                <i class="ri-calendar-event-line text-white text-xl"></i>
+                <i class="ri-mic-line text-white text-xl"></i>
               </div>
               <div>
-                <h3 class="font-playfair text-xl">
+                <h3 class="font-garamond text-xl">
                   Helena v. Brauchitsch (Reden)
                 </h3>
                 <p class="text-gray-700">+49 177 6283666</p>
@@ -430,7 +447,7 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
       class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center"
     >
       <div class="bg-white p-8 rounded-lg max-w-md w-full mx-4">
-        <h3 class="font-playfair text-2xl mb-4">Rückmeldung</h3>
+        <h3 class="font-garamond text-2xl mb-4">Rückmeldung</h3>
         <form id="rsvpForm" class="space-y-4">
           <div>
             <label class="block text-gray-700 mb-2">Name</label>
@@ -490,6 +507,18 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
         document.body.appendChild(thankYouDiv);
         setTimeout(() => thankYouDiv.remove(), 3000);
       }
+
+      document.getElementById("menu-toggle").addEventListener("click", function() {
+    let mobileMenu = document.getElementById("mobile-menu");
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  document.querySelectorAll(".menu-item").forEach(item => {
+    item.addEventListener("click", function() {
+      document.getElementById("mobile-menu").classList.add("hidden");
+    });
+  });
+
     </script>
   </body>
 </html>
