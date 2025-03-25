@@ -21,11 +21,11 @@
 var eingabe;
 
 while (eingabe !== passwort) {
-    eingabe = prompt("Bitte gib das Passwort ein");
+   eingabe = prompt("Bitte gib das Passwort ein");
 
-    if (eingabe !== passwort) {
-        alert("Passwort ist falsch. Bitte versuche es erneut.");
-    }
+   if (eingabe !== passwort) {
+       alert("Passwort ist falsch. Bitte versuche es erneut.");
+   }
 }
 
       tailwind.config = {
@@ -107,11 +107,11 @@ while (eingabe !== passwort) {
     <main class="max-w-7xl mx-auto px-4 py-16">
       <section class="text-center mb-20">
        
-        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mb-4">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mb-4 text-lg">
           Wir freuen uns schon sehr auf Euch alle! <br> Auf dieser Seite findet Ihr viele Infos rund um die Hochzeit.
         </p>
         <div class="mt-8 p-6 bg-secondary rounded-lg inline-block">
-          <p class="font-garamond text-gray-700">
+          <p class="font-garamond text-gray-700 text-lg">
             u.a.w.g <span class="font-bold">25. April 2025</span> <br><a href="mailto:georgundannaheirtaten@gmail.com" class="text-blue-600 underline">georgundannaheiraten@gmail.com</a> <br>oder über den QR-Code auf dem Infozettel
           </p>
           
@@ -235,10 +235,10 @@ while (eingabe !== passwort) {
         <h2 class="font-garamond font-light text-4xl text-center mb-12">
           Geschenke
         </h2>
-        <p class="font-garamond text-gray-700 max-w-2xl mx-auto text-s mb-4 text-center font-bold">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto text-s mb-4 text-center font-bold text-lg">
           Euer kommen ist für uns das größte Genschenk!
         </p>
-        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mb-10 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mb-10 text-center text-lg">
           Falls ihr uns dennoch etwas schenken möchet, haben wir eine Liste zur Inspiration erstellt. Bitte denkt daran, eure Geschenke als geschenkt zu markieren um Doppelungen zu vermeiden. 
 Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unseres gemeinsamen Zuhauses freuen.
         </p>
@@ -268,76 +268,114 @@ Alternativ würden wir uns über eine kleine Unterstützung zur Einrichtung unse
           <div class="bg-white p-8 rounded-lg shadow-lg">
             <h3 class="font-garamond text-2xl mb-4">Unterkünfte</h3>
             <ul class="space-y-4">
-              <li class="flex justify-between items-center">
-                <div>
-                  <h4 class="font-garamond text-xl font-bold">Hotel Nord</h4>
-                  <p class="text-gray-700">9 km von der Location</p>
-                  <p class="text-gray-700">Kontingent bis 25.05.2025 auf den Namen „Waldenfels-Brauchitsch“</p>
+              <li class="flex flex-col sm:flex-row justify-between gap-4 p-4 border-b border-gray-300">
+                <div class="flex-1">
+                  <div class="flex justify-between items-center gap-2">
+                    <h4 class="font-garamond text-2xl font-bold text-gray-900">Hotel Nord</h4>
+                    <a href="https://www.hotelnord.net" class="text-black font-medium underline hover:text-gray-700 transition-colors sm:hidden">
+                      zur Website
+                    </a>
+                  </div>
+                  <p class="text-gray-700 text-base mt-2">
+                    <span class="font-semibold">📍 Entfernung:</span> 9 km von der Location
+                  </p>
+                  <p class="text-gray-700 text-base">
+                    <span class="font-semibold">Kontingent:</span> Bis 25.05.2025 auf den Namen „Waldenfels-Brauchitsch“
+                  </p>
                 </div>
-                <a
-                  href="https://www.hotelnord.net"
-                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >zur Website</a
-                >
+                <a href="https://www.hotelnord.net" class="hidden sm:block text-black font-medium underline hover:text-gray-700 transition-colors">
+                  zur Website
+                </a>
               </li>
-              <li class="flex justify-between items-center">
-                <div>
-                  <h4 class="font-garamond text-xl font-bold">Kloster Schweinheim</h4>
-                  <p class="text-gray-700">8,6 km von der Location</p>
-                  <p class="text-gray-700">Reservierungen auf den Namen „Waldenfels-Brauchitsch“</p>
+            
+              <li class="flex flex-col sm:flex-row justify-between gap-4 p-4 border-b border-gray-300">
+                <div class="flex-1">
+                  <div class="flex justify-between items-center gap-2">
+                    <h4 class="font-garamond text-2xl font-bold text-gray-900">Kloster Schweinheim</h4>
+                    <a href="https://www.kloster-schweinheim.de/uebernachten" class="text-black font-medium underline hover:text-gray-700 transition-colors sm:hidden">
+                      zur Website
+                    </a>
+                  </div>
+                  <p class="text-gray-700 text-base mt-2">
+                    <span class="font-semibold">📍 Entfernung:</span> 8,6 km von der Location
+                  </p>
+                  <p class="text-gray-700 text-base">
+                    <span class="font-semibold">Kontingent:</span> Reservierungen auf den Namen „Waldenfels-Brauchitsch“
+                  </p>
                 </div>
-                <a
-                  href="https://www.kloster-schweinheim.de/uebernachten"
-                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >zur Website</a
-                >
+                <a href="https://www.kloster-schweinheim.de/uebernachten" class="hidden sm:block text-black font-medium underline hover:text-gray-700 transition-colors">
+                  zur Website
+                </a>
               </li>
-
-              <li class="flex justify-between items-center">
-                <div>
-                  <h4 class="font-garamond text-xl font-bold">Hotel zur Waage</h4>
-                  <p class="text-gray-700">10 km von der Location</p>
-                  <p class="text-gray-700">Kein Kontingent - bitte zeitnah reservieren</p>
-                  <p class="text-gray-700">DZ:100€ (bei 2 Übernschtungen 180€) EZ:76€</p>
+            
+              <li class="flex flex-col sm:flex-row justify-between gap-4 p-4 border-b border-gray-300">
+                <div class="flex-1">
+                  <div class="flex justify-between items-center gap-2">
+                    <h4 class="font-garamond text-2xl font-bold text-gray-900">Hotel zur Waage</h4>
+                    <a href="https://www.hotelzurwaage.de/hotel/" class="text-black font-medium underline hover:text-gray-700 transition-colors sm:hidden">
+                      zur Website
+                    </a>
+                  </div>
+                  <p class="text-gray-700 text-base mt-2">
+                    <span class="font-semibold">📍 Entfernung:</span> 10 km von der Location
+                  </p>
+                  <p class="text-gray-700 text-base">
+                    <span class="font-semibold">Kontingent:</span> Kein Kontingent – bitte zeitnah reservieren
+                  </p>
+                  <p class="text-gray-700 text-base">DZ: 100€ (bei 2 Übernachtungen 180€) EZ: 76€</p>
                 </div>
-                <a
-                  href="https://www.hotelzurwaage.de/hotel/"
-                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >zur Website</a
-                >
+                <a href="https://www.hotelzurwaage.de/hotel/" class="hidden sm:block text-black font-medium underline hover:text-gray-700 transition-colors">
+                  zur Website
+                </a>
               </li>
-
-              <li class="flex justify-between items-center">
-                <div>
-                  <h4 class="font-garamond text-xl font-bold">Hote Rothkopf</h4>
-                  <p class="text-gray-700">14 km von der Location</p>
-                  <p class="text-gray-700">Kein Kontingent - bitte zeitnah reservieren</p>
-                  <p class="text-gray-700">DZ:100€ EZ:85€ - auch 3Bettzimmer verfügbar</p>
+            
+              <li class="flex flex-col sm:flex-row justify-between gap-4 p-4 border-b border-gray-300">
+                <div class="flex-1">
+                  <div class="flex justify-between items-center gap-2">
+                    <h4 class="font-garamond text-2xl font-bold text-gray-900">Hotel Rothkopf</h4>
+                    <a href="http://www.hotel-rothkopf.de/" class="text-black font-medium underline hover:text-gray-700 transition-colors sm:hidden">
+                      zur Website
+                    </a>
+                  </div>
+                  <p class="text-gray-700 text-base mt-2">
+                    <span class="font-semibold">📍 Entfernung:</span> 14 km von der Location
+                  </p>
+                  <p class="text-gray-700 text-base">
+                    <span class="font-semibold">Kontingent:</span> Kein Kontingent – bitte zeitnah reservieren
+                  </p>
+                  <p class="text-gray-700 text-base">DZ: 100€ EZ: 85€ – auch 3Bettzimmer verfügbar</p>
                 </div>
-                <a
-                  href="http://www.hotel-rothkopf.de/"
-                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >zur Website</a
-                >
+                <a href="http://www.hotel-rothkopf.de/" class="hidden sm:block text-black font-medium underline hover:text-gray-700 transition-colors">
+                  zur Website
+                </a>
               </li>
-
-              <li class="flex justify-between items-center">
-                <div>
-                  <h4 class="font-garamond text-xl font-bold">Jugendwohnheim Haus Rheinbach</h4>
-                  <p class="text-gray-700">8 km von der Location</p>
-                  <p class="text-gray-700">Kein Kontingent - bitte zeitnah reservieren</p>
-                  <p class="text-gray-700">Dreibettzimmer 30€ p./P. als EZ 46€</p>
+            
+              <li class="flex flex-col sm:flex-row justify-between gap-4 p-4 border-b border-gray-300">
+                <div class="flex-1">
+                  <div class="flex justify-between items-center gap-2">
+                    <h4 class="font-garamond text-2xl font-bold text-gray-900">Jugendwohnheim Haus Rheinbach</h4>
+                    <a href="https://haus-rheinbach.de/unser-wohnheim-2/" class="text-black font-medium underline hover:text-gray-700 transition-colors sm:hidden">
+                      zur Website
+                    </a>
+                  </div>
+                  <p class="text-gray-700 text-base mt-2">
+                    <span class="font-semibold">📍 Entfernung:</span> 8 km von der Location
+                  </p>
+                  <p class="text-gray-700 text-base">
+                    <span class="font-semibold">Kontingent:</span> Kein Kontingent – bitte zeitnah reservieren
+                  </p>
+                  <p class="text-gray-700 text-base">Dreibettzimmer 30€ p./P. als EZ 46€</p>
                 </div>
-                <a
-                  href="https://haus-rheinbach.de/unser-wohnheim-2/"
-                  class="text-gray-900 font-bold underline hover:text-opacity-80 cursor-pointer"
-                  >zur Website</a
-                >
+                <a href="https://haus-rheinbach.de/unser-wohnheim-2/" class="hidden sm:block text-black font-medium underline hover:text-gray-700 transition-colors">
+                  zur Website
+                </a>
               </li>
             </ul>
+            
+            
             <div class="mt-8 pt-8 border-t">
              
-              <p class="text-gray-700">
+              <p class="text-gray-700 text-lg">
                 Insgesamt gibt es ein begrenztes Angebot an Übernachtungsmöglichkeiten in der Umgebung. Es lohnt sich daher frühzeitig zu Reservieren. 
 Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
 
@@ -375,12 +413,12 @@ Falls ihr Fragen habt, oder Hilfe braucht bitte meldet Euch gerne bei Marie.
             <p class="text-gray-700">Black Tie</p>
           </div>
         </div>
-        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mt-5 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mt-5 text-center text-lg">
           Abends kann es kühl werden, bringt daher etwas Wärmeres mit. <br><br>
-          <i class="fas fa-shoe-prints mr-2"></i>Ein paar Programmpunkte finden auf dem Rasen statt. Wir empfehlen das in die Wahl der Schuhe mit einzubeziehen.
+          <i class="fas fa-shoe-prints mr-2 text-lg"></i>Ein paar Programmpunkte finden auf dem Rasen statt. Wir empfehlen das in die Wahl der Schuhe mit einzubeziehen.
         </p>
 
-        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mt-5 text-center">
+        <p class="font-garamond text-gray-700 max-w-2xl mx-auto mt-5 text-center text-lg">
           <i class="fas fa-baby mr-2"></i>Aufgrund der Räumlichkeiten vor Ort ist es nicht möglich, eine Kinderbetreuung zu organisieren; zudem gibt es ungesicherte Wasserflächen an der Winterburg. Wir bitten deshalb um Verständnis, dass grundsätzlich nur Säuglinge mitfeiern können.
         </p>
       </section>
